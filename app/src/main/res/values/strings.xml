@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HowTu</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_blackout">Blackout</string>
+    <string name="title_activity_save_screen">SaveScreen</string>
+    <string name="title_activity_screen_food">ScreenFood</string>
+    <string name="title_activity_screen_drink">ScreenDrink</string>
+    <string name="title_activity_screen_diy">ScreenDIY</string>
+    <string name="title_activity_screen_auto">ScreenAuto</string>
+    <string name="title_activity_screen_crafts">ScreenCrafts</string>
+    <string name="title_activity_screen_style">ScreenStyle</string>
+</resources>
