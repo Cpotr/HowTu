@@ -12,4 +12,5 @@
     <string name="title_activity_screen_auto">ScreenAuto</string>
     <string name="title_activity_screen_crafts">ScreenCrafts</string>
     <string name="title_activity_screen_style">ScreenStyle</string>
+    <string name="title_activity_how_tu_web_view">HowTuWebView</string>
 </resources>

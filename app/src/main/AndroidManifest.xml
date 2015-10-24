@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.drake.howtu.howtu" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,28 +19,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WebView"
-            android:label="@string/title_activity_web_view"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.drake.howtu.howtu.MainActivity" />
-        </activity>
-        <activity
             android:name=".Blackout"
             android:label="@string/title_activity_blackout"
-            android:parentActivityName=".WebView" >
+            android:parentActivityName=".HowTuWebView" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.drake.howtu.howtu.WebView" />
+                android:value="com.drake.howtu.howtu.HowTuWebView" />
         </activity>
         <activity
             android:name=".SaveScreen"
             android:label="@string/title_activity_save_screen"
-            android:parentActivityName=".WebView" >
+            android:parentActivityName=".HowTuWebView" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.drake.howtu.howtu.WebView" />
+                android:value="com.drake.howtu.howtu.HowTuWebView" />
         </activity>
         <activity
             android:name=".ScreenFood"
@@ -79,6 +73,14 @@
         <activity
             android:name=".ScreenStyle"
             android:label="@string/title_activity_screen_style"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.drake.howtu.howtu.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HowTuWebView"
+            android:label="@string/title_activity_how_tu_web_view"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
