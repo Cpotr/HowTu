@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class Blackout extends AppCompatActivity {
@@ -21,7 +22,6 @@ public class Blackout extends AppCompatActivity {
     private static final int SAMPLE_DELAY = 75;
 
     //Intent that sends you to the webview
-    Intent intent = new Intent(this, HowTuWebView.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,9 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 100){
+                            if(lastLevel > 100)
+                            {
+                                Intent intent = new Intent(Blackout.this, HowTuWebView.class);
                                 startActivity(intent);
                             }
                         }
@@ -109,6 +111,12 @@ public class Blackout extends AppCompatActivity {
                 audio = null;
             }
         } catch (Exception e) {e.printStackTrace();}
+    }
+
+    public void toWebView(View view)
+    {
+        Intent intent = new Intent(this, HowTuWebView.class);
+        startActivity(intent);
     }
 
 
