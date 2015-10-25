@@ -9,6 +9,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -33,6 +34,9 @@ public class HowTuWebView extends AppCompatActivity {
 
         mWebView.loadUrl("http://beta.html5test.com/");
 
+        Toast toast = Toast.makeText(getApplicationContext(), "OnCreate", Toast.LENGTH_SHORT);
+        toast.show();
+
         timerToBlackout();
     }
 
@@ -55,6 +59,16 @@ public class HowTuWebView extends AppCompatActivity {
         inactivityTask.cancel();
         timerToBlackout();
     }
+
+    /*
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        inactivityTask.cancel();
+        timerToBlackout();
+    }
+    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

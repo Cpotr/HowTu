@@ -22,6 +22,7 @@
         <activity
             android:name=".Blackout"
             android:label="@string/title_activity_blackout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:parentActivityName=".HowTuWebView" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
