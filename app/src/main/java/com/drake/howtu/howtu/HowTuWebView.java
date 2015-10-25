@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,6 +25,7 @@ public class HowTuWebView extends AppCompatActivity {
         setContentView(R.layout.activity_how_tu_web_view);
 
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
+        mWebView.setWebViewClient(new customWebViewClient());
 
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();
@@ -74,5 +76,13 @@ public class HowTuWebView extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private class customWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url){
+            view.loadUrl(url);
+            return true;
+        }
     }
 }
