@@ -1,15 +1,22 @@
 package com.drake.howtu.howtu;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class HowTuWebView extends AppCompatActivity {
 
     private WebView mWebView;
+    private Timer inactivityTimer;
+    private MyTimerTask inactivityTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +31,27 @@ public class HowTuWebView extends AppCompatActivity {
 
         mWebView.loadUrl("http://beta.html5test.com/");
 
+        timerToBlackout();
+    }
 
+    class MyTimerTask extends TimerTask {
+        @Override
+        public void run(){
+            Intent intent = new Intent(HowTuWebView.this, Blackout.class);
+            startActivity(intent);
+        }
+    }
+
+    public void timerToBlackout() {
+        inactivityTimer = new Timer();
+        inactivityTask = new MyTimerTask();
+        inactivityTimer.schedule(inactivityTask, 10000);
+    }
+
+    @Override
+    public void onUserInteraction() {
+        inactivityTask.cancel();
+        timerToBlackout();
     }
 
     @Override
