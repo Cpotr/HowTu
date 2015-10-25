@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 public class Blackout extends AppCompatActivity {
@@ -27,6 +28,15 @@ public class Blackout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blackout);
+
+        View decorView = getWindow().getDecorView();
+        // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
+        WindowManager.LayoutParams params = getWindow().getAttributes();
+        params.screenBrightness = 0;
+        getWindow().setAttributes(params);
 
         try {
             bufferSize = AudioRecord
