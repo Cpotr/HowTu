@@ -72,8 +72,7 @@ public class Blackout extends AppCompatActivity {
                             //we want the method to do
                             if(lastLevel > 100)
                             {
-                                Intent intent = new Intent(Blackout.this, HowTuWebView.class);
-                                startActivity(intent);
+                                finish();
                             }
                         }
                     });
