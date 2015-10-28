@@ -97,6 +97,8 @@ public class HowTuWebView extends AppCompatActivity {
                             if(lastLevel > 35)
                             {
                                 mWebView.pageDown(true);
+                                inactivityTask.cancel();
+                                timerToBlackout();
                             }
                         }
                     });
