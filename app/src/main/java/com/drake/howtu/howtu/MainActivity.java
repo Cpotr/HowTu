@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //sets focus within the app
+    //needed for click
     public void onClick(View view) {
         InputMethodManager imm = (InputMethodManager) view.getContext()
                 .getSystemService(Context.INPUT_METHOD_SERVICE);
