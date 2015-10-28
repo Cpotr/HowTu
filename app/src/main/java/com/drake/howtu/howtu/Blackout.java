@@ -22,8 +22,6 @@ public class Blackout extends AppCompatActivity {
     private Thread thread;
     private static final int SAMPLE_DELAY = 75;
 
-    //Intent that sends you to the webview
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +68,7 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 100)
+                            if(lastLevel > 35)
                             {
                                 finish();
                             }
