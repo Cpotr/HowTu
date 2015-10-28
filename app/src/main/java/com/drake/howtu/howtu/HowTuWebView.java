@@ -1,6 +1,8 @@
 package com.drake.howtu.howtu;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -20,10 +23,19 @@ public class HowTuWebView extends AppCompatActivity {
     private Timer inactivityTimer;
     private MyTimerTask inactivityTask;
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_tu_web_view);
+
+        Intent PassedValues = getIntent();
+        String urlEntered = "http://beta.html5test.com/";
+
+        if(!Objects.equals(PassedValues.getStringExtra("URL Entered"), ""))
+        {
+            urlEntered = PassedValues.getStringExtra("URL Entered");
+        }
 
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
         mWebView.setWebViewClient(new customWebViewClient());
@@ -32,10 +44,10 @@ public class HowTuWebView extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        mWebView.loadUrl("http://beta.html5test.com/");
+        mWebView.loadUrl(urlEntered);
 
-        Toast toast = Toast.makeText(getApplicationContext(), "OnCreate", Toast.LENGTH_SHORT);
-        toast.show();
+        //Toast toast = Toast.makeText(getApplicationContext(), urlEntered, Toast.LENGTH_SHORT);
+        //toast.show();
 
         timerToBlackout();
     }
@@ -62,6 +74,7 @@ public class HowTuWebView extends AppCompatActivity {
 
     @Override
     public void onPause() {
+        super.onPause();
         inactivityTask.cancel();
     }
 

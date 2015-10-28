@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     public void toWebView(View view)
     {
         Intent intent = new Intent(this, HowTuWebView.class);
+        EditText urlEntry = (EditText)findViewById(R.id.urlBar);
+
+        intent.putExtra("URL Entered", urlEntry.getText().toString());
+
         startActivity(intent);
     }
 
