@@ -3,8 +3,106 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/howtu_backgroundimage"
+    tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:src="@drawable/enterbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/enterButton"
+        android:onClick="toWebView"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Paste url here"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/enterButton"
+        android:id="@+id/urlBar"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/handy"
+        android:src="@drawable/crafts"
+        android:id="@+id/crafts"
+        android:layout_alignLeft="@+id/urlBar"
+        android:layout_alignStart="@+id/urlBar"
+        android:layout_marginTop="25dp"
+        android:onClick="toCrafts"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/car"
+        android:src="@drawable/style"
+        android:id="@+id/style"
+        android:layout_alignRight="@+id/urlBar"
+        android:layout_alignEnd="@+id/urlBar"
+        android:layout_marginTop="25dp"
+        android:onClick="toStyle"/>
+
+    <!--<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/handy"
+        android:layout_above="@+id/crafts"
+        android:layout_alignLeft="@+id/crafts"
+        android:layout_alignStart="@+id/crafts"
+        android:id="@+id/handy"
+        android:layout_marginTop="25dp"
+        android:onClick="toHandy"/>-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/handy"
+        android:layout_below="@+id/food"
+        android:layout_alignLeft="@+id/crafts"
+        android:layout_alignStart="@+id/crafts"
+        android:id="@+id/handy"
+        android:layout_marginTop="25dp"
+        android:onClick="toHandy"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/car"
+        android:layout_below="@+id/drinks"
+        android:layout_alignLeft="@+id/style"
+        android:layout_alignStart="@+id/style"
+        android:id="@+id/car"
+        android:layout_marginTop="25dp"
+        android:onClick="toCar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/handy"
+        android:layout_alignStart="@+id/handy"
+        android:layout_marginTop="25dp"
+        android:id="@+id/food"
+        android:onClick="toFood"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/drinks"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/car"
+        android:layout_alignStart="@+id/car"
+        android:layout_marginTop="25dp"
+        android:id="@+id/drinks"
+        android:onClick="toDrinks"/>
+
+    <!--
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -24,5 +122,5 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="toBlackout"/>
-
+-->
 </RelativeLayout>

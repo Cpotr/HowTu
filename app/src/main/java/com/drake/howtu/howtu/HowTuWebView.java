@@ -60,6 +60,11 @@ public class HowTuWebView extends AppCompatActivity {
         timerToBlackout();
     }
 
+    @Override
+    public void onPause() {
+        inactivityTask.cancel();
+    }
+
     /*
     @Override
     public void onResume() {

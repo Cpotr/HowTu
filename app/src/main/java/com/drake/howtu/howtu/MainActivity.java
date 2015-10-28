@@ -21,9 +21,39 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toBlackout(View view)
+    public void toCrafts(View view)
     {
-        Intent intent = new Intent(this, Blackout.class);
+        Intent intent = new Intent(this, ScreenCrafts.class);
+        startActivity(intent);
+    }
+
+    public void toStyle(View view)
+    {
+        Intent intent = new Intent(this, ScreenStyle.class);
+        startActivity(intent);
+    }
+
+    public void toHandy(View view)
+    {
+        Intent intent = new Intent(this, ScreenDIY.class);
+        startActivity(intent);
+    }
+
+    public void toCar(View view)
+    {
+        Intent intent = new Intent(this, ScreenAuto.class);
+        startActivity(intent);
+    }
+
+    public void toFood(View view)
+    {
+        Intent intent = new Intent(this, ScreenFood.class);
+        startActivity(intent);
+    }
+
+    public void toDrinks(View view)
+    {
+        Intent intent = new Intent(this, ScreenDrink.class);
         startActivity(intent);
     }
 
