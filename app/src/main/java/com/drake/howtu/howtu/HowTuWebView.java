@@ -96,7 +96,7 @@ public class HowTuWebView extends AppCompatActivity {
                             //we want the method to do
                             if(lastLevel > 35)
                             {
-                                mWebView.pageDown(true);
+                                mWebView.pageDown(false);
                                 inactivityTask.cancel();
                                 timerToBlackout();
                             }
