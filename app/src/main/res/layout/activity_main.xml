@@ -34,24 +34,52 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/handy"
+        android:layout_below="@+id/handyLabel"
         android:src="@drawable/crafts"
         android:id="@+id/crafts"
         android:layout_alignLeft="@+id/urlBar"
         android:layout_alignStart="@+id/urlBar"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:onClick="toCrafts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crafts"
+        android:text="Crafts"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/crafts"
+        android:layout_alignEnd="@+id/crafts"
+        android:layout_alignLeft="@+id/crafts"
+        android:layout_alignStart="@+id/crafts"
+        android:id="@+id/craftLabel"
+        android:gravity="center"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/car"
+        android:layout_below="@+id/carLabel"
         android:src="@drawable/style"
         android:id="@+id/style"
         android:layout_alignRight="@+id/urlBar"
         android:layout_alignEnd="@+id/urlBar"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:onClick="toStyle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/style"
+        android:text="Style"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/style"
+        android:layout_alignEnd="@+id/style"
+        android:layout_alignLeft="@+id/style"
+        android:layout_alignStart="@+id/style"
+        android:id="@+id/styleLabel"
+        android:gravity="center"/>
 
     <!--<ImageView
         android:layout_width="100dp"
@@ -68,23 +96,51 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/handy"
-        android:layout_below="@+id/food"
+        android:layout_below="@+id/foodLabel"
         android:layout_alignLeft="@+id/crafts"
         android:layout_alignStart="@+id/crafts"
         android:id="@+id/handy"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:onClick="toHandy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/handy"
+        android:text="DIY"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/handy"
+        android:layout_alignEnd="@+id/handy"
+        android:layout_alignLeft="@+id/handy"
+        android:layout_alignStart="@+id/handy"
+        android:id="@+id/handyLabel"
+        android:gravity="center"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/car"
-        android:layout_below="@+id/drinks"
+        android:layout_below="@+id/drinksLabel"
         android:layout_alignLeft="@+id/style"
         android:layout_alignStart="@+id/style"
+        android:layout_marginTop="10dp"
         android:id="@+id/car"
-        android:layout_marginTop="25dp"
         android:onClick="toCar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car"
+        android:text="Auto"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/car"
+        android:layout_alignEnd="@+id/car"
+        android:layout_alignLeft="@+id/car"
+        android:layout_alignStart="@+id/car"
+        android:id="@+id/carLabel"
+        android:gravity="center"/>
 
     <ImageView
         android:layout_width="100dp"
@@ -97,6 +153,20 @@
         android:id="@+id/food"
         android:onClick="toFood"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food"
+        android:text="Food"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/food"
+        android:layout_alignEnd="@+id/food"
+        android:layout_alignLeft="@+id/food"
+        android:layout_alignStart="@+id/food"
+        android:id="@+id/foodLabel"
+        android:gravity="center"/>
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -107,6 +177,20 @@
         android:layout_marginTop="25dp"
         android:id="@+id/drinks"
         android:onClick="toDrinks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinks"
+        android:text="Drinks"
+        android:textColor="#ff460c"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/drinks"
+        android:layout_alignEnd="@+id/drinks"
+        android:layout_alignLeft="@+id/drinks"
+        android:layout_alignStart="@+id/drinks"
+        android:id="@+id/drinksLabel"
+        android:gravity="center"/>
 
     <!--
     <Button
