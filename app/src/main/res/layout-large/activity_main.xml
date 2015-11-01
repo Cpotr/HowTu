@@ -16,20 +16,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/enterButton"
-        android:onClick="toWebView"
-        android:layout_marginTop="5dp"/>
+        android:onClick="toWebView"/>
 
     <EditText
         android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="  Paste url here"
+        android:layout_height="wrap_content"
+        android:hint="Paste url here"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/enterButton"
         android:id="@+id/urlBar"
-        android:layout_marginTop="25dp"
-        android:inputType="textUri|textNoSuggestions|textImeMultiLine"
-        android:imeOptions="actionGo"
-        android:background="@drawable/pasteurlbar"/>
+        android:layout_marginTop="25dp"/>
 
     <ImageView
         android:layout_width="100dp"
