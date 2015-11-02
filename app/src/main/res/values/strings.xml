@@ -13,4 +13,11 @@
     <string name="title_activity_screen_crafts">ScreenCrafts</string>
     <string name="title_activity_screen_style">ScreenStyle</string>
     <string name="title_activity_how_tu_web_view">HowTuWebView</string>
+    <string name="title_activity_tutorial">tutorial</string>
+
+    <string name="title_activity_how_tu_tutorial">howTuTutorial</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_first_run">FirstRunActivity</string>
 </resources>

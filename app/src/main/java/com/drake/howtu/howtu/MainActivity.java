@@ -3,6 +3,8 @@ package com.drake.howtu.howtu;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 boolean handled = false;
                 if (actionId == EditorInfo.IME_ACTION_GO) {
                     Intent intent = new Intent(MainActivity.this, HowTuWebView.class);
-                    EditText urlEntry = (EditText)findViewById(R.id.urlBar);
+                    EditText urlEntry = (EditText) findViewById(R.id.urlBar);
 
                     intent.putExtra("URL Entered", urlEntry.getText().toString());
 
