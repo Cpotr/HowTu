@@ -3,7 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="16dp"
+    android:paddingBottom="10dp"
     android:clickable="true"
     android:focusableInTouchMode="true"
     android:background="@drawable/howtu_backgroundimage"
@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="110dp"
+        android:layout_height="100dp"
         android:src="@drawable/howtu_header"
         android:scaleType="fitXY"
         android:id="@+id/headerBar"/>
