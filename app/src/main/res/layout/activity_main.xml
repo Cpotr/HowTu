@@ -31,6 +31,8 @@
         android:layout_height="40dp"
         android:hint="  Paste url here"
         android:layout_centerHorizontal="true"
+        android:textColorHint="#bab5b5"
+        android:textColor="#ff5722"
         android:layout_above="@+id/enterButton"
         android:id="@+id/urlBar"
         android:layout_marginTop="25dp"
