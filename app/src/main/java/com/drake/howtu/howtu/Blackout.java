@@ -20,7 +20,7 @@ public class Blackout extends AppCompatActivity {
     private int bufferSize;
     private double lastLevel = 0;
     private Thread thread;
-    private static final int SAMPLE_DELAY = 75;
+    private static final int SAMPLE_DELAY = 25;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,7 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 35)
+                            if(lastLevel > 250)
                             {
                                 finish();
                             }

@@ -15,7 +15,7 @@ public class tutorial extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        GifWebView view = new GifWebView(this, "file:///android_asset/howtu_gif.gif");
+        GifWebView view = new GifWebView(this, "file:///android_asset/how_tu_gif_t.gif");
         setContentView(view);
 
         timer = new CountDownTimer(25000, 1000) {
