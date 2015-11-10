@@ -36,7 +36,25 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Change a Tire" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:textAllCaps="false"
+                android:background="@drawable/style_button1"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Change Wiper Blade" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:textAllCaps="false"
+                android:background="@drawable/style_button1"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Change a Fuse" />
 
             <Button
                 android:id="@+id/button4"
@@ -45,7 +63,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Replace Spark Plug" />
 
             <Button
                 android:id="@+id/button5"
@@ -54,7 +72,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Check Your Fluids" />
 
             <Button
                 android:id="@+id/button6"
@@ -63,7 +81,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Change Your Headlights" />
 
             <Button
                 android:id="@+id/button7"
@@ -72,7 +90,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Change Your Air Filter" />
 
             <Button
                 android:id="@+id/button8"
@@ -81,7 +99,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Flush a Radiator" />
 
             <Button
                 android:id="@+id/button9"
@@ -90,34 +108,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Change Your Brake Pads" />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 

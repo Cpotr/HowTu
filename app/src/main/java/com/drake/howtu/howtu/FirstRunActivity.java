@@ -18,6 +18,9 @@ public class FirstRunActivity extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("HowTu", 0);
         boolean firstRun = settings.getBoolean("firstRun", false);
 
+        //sets whether this is first run or not, if it is then it will
+        // send the intent to the tutorial gif, otherwise it will send
+        // the intent to the main page and start normally
         if(!firstRun)
         {
             SharedPreferences.Editor editor=settings.edit();

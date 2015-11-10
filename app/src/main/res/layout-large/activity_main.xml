@@ -38,9 +38,7 @@
         android:layout_marginTop="40dp"
         android:inputType="textUri|textNoSuggestions|textImeMultiLine"
         android:imeOptions="actionGo"
-        android:background="@drawable/pasteurlbar"
-        android:textColor="#ff5722"
-        android:textColorHint="#424242"/>
+        android:background="@drawable/pasteurlbar" />
 
     <ImageView
         android:layout_width="150dp"
