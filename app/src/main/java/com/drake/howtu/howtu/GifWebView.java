@@ -8,9 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
 
-/**
- * Created by maxitaxi_kindred on 11/2/15.
- */
+
 public class GifWebView extends WebView {
 
     public GifWebView(Context context, String path){

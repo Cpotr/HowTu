@@ -37,8 +37,29 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Knit"
                 android:textAllCaps="false"
+                android:onClick="button1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button1"
+                android:text="Crochet"
+                android:textAllCaps="false"
+                android:onClick="button2"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button1"
+                android:text="Knit a Scarf"
+                android:textAllCaps="false"
+                android:onClick="button3"
                 android:textColor="#ffffff" />
 
             <Button
@@ -46,8 +67,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Knit a Headband"
                 android:textAllCaps="false"
+                android:onClick="button4"
                 android:textColor="#ffffff" />
 
             <Button
@@ -55,8 +77,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Crochet a Striped Headband"
                 android:textAllCaps="false"
+                android:onClick="button5"
                 android:textColor="#ffffff" />
 
             <Button
@@ -64,8 +87,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Make a Fleece Tie Blanket"
                 android:textAllCaps="false"
+                android:onClick="button6"
                 android:textColor="#ffffff" />
 
             <Button
@@ -73,8 +97,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Make Your Own Boot Cuffs"
                 android:textAllCaps="false"
+                android:onClick="button7"
                 android:textColor="#ffffff" />
 
             <Button
@@ -82,8 +107,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Make Slime"
                 android:textAllCaps="false"
+                android:onClick="button8"
                 android:textColor="#ffffff" />
 
             <Button
@@ -91,36 +117,11 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
-                android:text="Button"
+                android:text="Make Sand Art"
                 android:textAllCaps="false"
+                android:onClick="button9"
                 android:textColor="#ffffff" />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_button1"
-                android:text="Button"
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_button1"
-                android:text="Button"
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_button1"
-                android:text="Button"
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
         </LinearLayout>
     </ScrollView>
 

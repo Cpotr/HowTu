@@ -36,7 +36,28 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button1"
+                android:text="Tie a Tie: Four in Hand Knot" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:textAllCaps="false"
+                android:background="@drawable/style_button1"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:onClick="button2"
+                android:text="Tie a Tie: Pratt Knot" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:textAllCaps="false"
+                android:background="@drawable/style_button1"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:onClick="button3"
+                android:text=" Tie a Tie: Half Windsor Knot" />
 
             <Button
                 android:id="@+id/button4"
@@ -45,7 +66,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button4"
+                android:text="Tie a Tie: WIndsor Knot" />
 
             <Button
                 android:id="@+id/button5"
@@ -54,7 +76,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button5"
+                android:text="French Braid Hair" />
 
             <Button
                 android:id="@+id/button6"
@@ -63,7 +86,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button6"
+                android:text="Fishtail Braid Hair" />
 
             <Button
                 android:id="@+id/button7"
@@ -72,7 +96,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button7"
+                android:text="Create a Smokey Eye" />
 
             <Button
                 android:id="@+id/button8"
@@ -81,7 +106,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button8"
+                android:text="Tie a Bowtie" />
 
             <Button
                 android:id="@+id/button9"
@@ -90,34 +116,9 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="button9"
+                android:text="Contour Your Face" />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 

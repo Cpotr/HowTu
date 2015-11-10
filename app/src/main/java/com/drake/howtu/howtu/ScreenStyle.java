@@ -1,9 +1,11 @@
 package com.drake.howtu.howtu;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ScreenStyle extends AppCompatActivity {
 
@@ -11,6 +13,51 @@ public class ScreenStyle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_style);
+    }
+
+    public void button1 (View view){
+        toWebView("http://www.tie-a-tie.net/fourinhand.html");
+    }
+
+    public void button2 (View view){
+        toWebView("http://www.tie-a-tie.net/pratt.html");
+    }
+
+    public void button3 (View view){
+        toWebView("http://www.tie-a-tie.net/halfwindsor.html");
+    }
+
+    public void button4 (View view){
+        toWebView("http://www.tie-a-tie.net/windsor.html");
+    }
+
+    public void button5 (View view){
+        toWebView("http://2good2lose.com/braid-french.shtml");
+    }
+
+    public void button6 (View view){
+        toWebView("http://2good2lose.com/braid-fishtail.shtml");
+    }
+
+    public void button7 (View view){
+        toWebView("http://www.wikihow.com/Create-a-Smoky-Eye-Effect");
+    }
+
+    public void button8 (View view){
+        toWebView("http://www.wikihow.com/Tie-a-Bow-Tie");
+    }
+
+    public void button9 (View view){
+        toWebView("http://www.cosmopolitan.com/style-beauty/beauty/how-to/a43730/face-shape-contour-map/");
+    }
+
+    public void toWebView(String URL)
+    {
+        Intent intent = new Intent(ScreenStyle.this, HowTuWebView.class);
+
+        intent.putExtra("URL Entered", URL);
+
+        startActivity(intent);
     }
 
     @Override

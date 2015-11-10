@@ -36,6 +36,8 @@ public class Blackout extends AppCompatActivity {
         params.screenBrightness = 0;
         getWindow().setAttributes(params);
 
+        //begins listening for audio
+        //this will detect the sound from the user
         try {
             bufferSize = AudioRecord
                     .getMinBufferSize(sampleRate, AudioFormat.CHANNEL_IN_MONO,
@@ -68,8 +70,11 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 250)
+
+                            //The if statement checks last level, sets the volume needed to call the method
+                            if(lastLevel > 275)
                             {
+                                //closes this class and sends us back to the previous
                                 finish();
                             }
                         }
