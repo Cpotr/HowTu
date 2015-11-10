@@ -1,9 +1,11 @@
 package com.drake.howtu.howtu;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 //Class holds the image view file for the full tutorial
 
@@ -20,6 +22,10 @@ public class tutorial_full extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_tutorial_full, menu);
         return true;
+    }
+
+    public void back(View view) {
+        finish();
     }
 
     @Override
