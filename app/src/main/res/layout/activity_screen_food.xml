@@ -36,7 +36,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Cook Pancakes"
+                android:onClick="button1"/>
 
             <Button
                 android:id="@+id/button4"

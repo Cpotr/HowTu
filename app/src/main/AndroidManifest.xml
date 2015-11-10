@@ -108,6 +108,14 @@
             android:label="@string/title_activity_tutorial"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
+        <activity
+            android:name=".tutorial_full"
+            android:label="@string/title_activity_tutorial_full"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.drake.howtu.howtu.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

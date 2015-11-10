@@ -6,7 +6,7 @@
     android:paddingBottom="10dp"
     android:clickable="true"
     android:focusableInTouchMode="true"
-    android:background="@drawable/howtu_backgroundimage"
+    android:background="@drawable/howtu_backgroundimage2"
     tools:context=".MainActivity">
 
     <ImageView
@@ -200,6 +200,18 @@
         android:layout_alignStart="@+id/drinks"
         android:id="@+id/drinksLabel"
         android:gravity="center"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/questionmark"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/headerBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="toTutorial" />
 
     <!--
     <Button
