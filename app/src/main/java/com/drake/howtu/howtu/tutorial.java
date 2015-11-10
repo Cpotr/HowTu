@@ -1,10 +1,7 @@
 package com.drake.howtu.howtu;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -15,7 +12,7 @@ public class tutorial extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        GifWebView view = new GifWebView(this, "file:///android_asset/howtu_gif.gif");
+        GifWebView view = new GifWebView(this, "file:///android_asset/howtugif2.gif");
         setContentView(view);
 
         timer = new CountDownTimer(25000, 1000) {
