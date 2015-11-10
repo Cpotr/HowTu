@@ -49,6 +49,11 @@ public class HowTuWebView extends AppCompatActivity {
             urlEntered = PassedValues.getStringExtra("URL Entered");
         }
 
+        if(urlEntered.charAt(0) != 'h' && urlEntered.charAt(1) != 't' && urlEntered.charAt(2) != 't' && urlEntered.charAt(3) != 'p')
+        {
+            urlEntered = "http://" + urlEntered;
+        }
+
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
         mWebView.setWebViewClient(new customWebViewClient());
 
