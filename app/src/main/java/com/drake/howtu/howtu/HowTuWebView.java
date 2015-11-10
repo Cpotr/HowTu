@@ -58,9 +58,6 @@ public class HowTuWebView extends AppCompatActivity {
 
         mWebView.loadUrl(urlEntered);
 
-        //Toast toast = Toast.makeText(getApplicationContext(), urlEntered, Toast.LENGTH_SHORT);
-        //toast.show();
-
         try {
             bufferSize = AudioRecord
                     .getMinBufferSize(sampleRate, AudioFormat.CHANNEL_IN_MONO,
@@ -97,10 +94,15 @@ public class HowTuWebView extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 350 )
+
+                            //The if statement checks last level, sets the volume needed to call the method
+                            if(lastLevel > 275 )
                             {
+                                //Scrolls the webview down
                                 mWebView.pageDown(false);
+
                                 inactivityTask.cancel();
+
                                 timerToBlackout();
                             }
                         }

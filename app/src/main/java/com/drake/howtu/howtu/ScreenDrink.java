@@ -15,6 +15,7 @@ public class ScreenDrink extends AppCompatActivity {
         setContentView(R.layout.activity_screen_drink);
     }
 
+    //the below methods simply pass the url into our webview call for each different button
     public void button1 (View view){
         toWebView("http://www.seriouseats.com/recipes/2010/06/the-martini-recipe.html");
     }
@@ -51,7 +52,7 @@ public class ScreenDrink extends AppCompatActivity {
         toWebView("http://www.seriouseats.com/recipes/2011/10/mojito-rum-mint-cocktail-recipe.html");
     }
 
-
+    //passes the URL into the webview and calls the webview
     public void toWebView(String URL)
     {
         Intent intent = new Intent(ScreenDrink.this, HowTuWebView.class);

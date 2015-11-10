@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+//Class holds the image view file for the full tutorial
+
 public class tutorial_full extends AppCompatActivity {
 
     @Override

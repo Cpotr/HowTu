@@ -15,6 +15,7 @@ public class ScreenFood extends AppCompatActivity {
         setContentView(R.layout.activity_screen_food);
     }
 
+    //the below methods simply pass the url into our webview call for each different button
     public void button1 (View view){
         toWebView("http://allrecipes.com/recipe/78299/boilermaker-tailgate-chili/?internalSource=recipe%20hub&referringId=173&referringContentType=recipe%20hub");
     }
@@ -53,7 +54,7 @@ public class ScreenFood extends AppCompatActivity {
 
 
 
-
+    //passes the URL into the webview and calls the webview
     public void toWebView(String URL)
     {
         Intent intent = new Intent(ScreenFood.this, HowTuWebView.class);

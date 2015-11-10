@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText editText = (EditText) findViewById(R.id.urlBar);
 
+        //this hides the keyboard if the user clicks outside of it
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
         editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -67,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
+    //passes the URL into the webview and calls the webview
     public void toWebView(View view)
     {
         Intent intent = new Intent(this, HowTuWebView.class);
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //The below methods call the classes that have the pre loaded tutorials
     public void toCrafts(View view)
     {
         Intent intent = new Intent(this, ScreenCrafts.class);
@@ -113,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //sends the user to the full tutorial screen
     public void toTutorial(View view)
     {
         Intent intent = new Intent(this, tutorial_full.class);
