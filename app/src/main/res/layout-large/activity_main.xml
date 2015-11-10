@@ -211,7 +211,9 @@
         android:layout_below="@+id/headerBar"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="toTutorial" />
+        android:onClick="toTutorial"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
 
     <!--
     <Button

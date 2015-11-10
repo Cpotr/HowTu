@@ -6,7 +6,7 @@
     android:paddingBottom="@dimen/activity_horizontal_margin"
     android:clickable="true"
     android:focusableInTouchMode="true"
-    android:background="@drawable/howtu_backgroundimage"
+    android:background="@drawable/howtu_backgroundimage2"
     tools:context=".MainActivity">
 
     <ImageView
@@ -211,7 +211,9 @@
         android:layout_below="@+id/headerBar"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="toTutorial" />
+        android:onClick="toTutorial"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
 
     <!--
     <Button

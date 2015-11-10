@@ -97,7 +97,7 @@ public class HowTuWebView extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 250 )
+                            if(lastLevel > 350 )
                             {
                                 mWebView.pageDown(false);
                                 inactivityTask.cancel();
