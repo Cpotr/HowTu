@@ -24,9 +24,17 @@ public class ScreenDIY extends AppCompatActivity {
     }
 
     //create code for buttons to go to predetermined webpages
+    public void button1(View view) {
+        Intent intent = new Intent(this, HowTuWebView.class);
+        String url = "http://www.popularmechanics.com/home/how-to/a3095/5-steps-to-fix-a-leaky-faucet-15470175/";
+        intent.putExtra("URL Entered", url);
+
+        startActivity(intent);
+    }
+
     public void button2(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.craftyarncouncil.com/instructions_kn.php3";
+        String url = "http://www.wikihow.com/Unclog-a-Shower-Drain";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -34,7 +42,7 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button3(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.craftyarncouncil.com/instructions_cr.php3";
+        String url = "http://homeguides.sfgate.com/remove-upipe-under-sink-24864.html";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -42,7 +50,7 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button4(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.craftyarncouncil.com/instructions_cr.php3";
+        String url = "http://homeguides.sfgate.com/test-household-water-pressure-20231.html";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -50,7 +58,8 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button5(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.ballstothewallsknits.com/2014/12/around-we-go-headband.html";
+        String url = "http://www.wikihow.com/Replace-Damaged-Roof-Shingles";
+
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -58,8 +67,7 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button6(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.mooglyblog.com/neptunes-stripes-blanket/";
-
+        String url = "http://www.wikihow.com/Caulk-Windows";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -67,7 +75,7 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button7(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.wikihow.com/Make-a-Fleece-Tie-Blanket";
+        String url = "http://www.lowes.com/projects/paint-stain-and-wallpaper/paint-a-room/project";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
@@ -75,24 +83,16 @@ public class ScreenDIY extends AppCompatActivity {
 
     public void button8(View view) {
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://blog.consumercrafts.com/seasonal/winter/loom-knit-boot-cuffs/";
+        String url = "http://www.diynetwork.com/how-to/skills-and-know-how/plumbing/how-to-drain-a-water-heater";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
     }
 
     public void button9(View view) {
-        Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://ourbestbites.com/2010/09/kids-in-the-kitchen-slime/";
-        intent.putExtra("URL Entered", url);
-
-        startActivity(intent);
-    }
-
-    public void button10(View view) {
 
         Intent intent = new Intent(this, HowTuWebView.class);
-        String url = "http://www.wikihow.com/Make-Sand-Art";
+        String url = "http://www.realsimple.com/home-organizing/home-improvement/do-it-yourself-save-big/replace-doorknob-hidden-screws";
         intent.putExtra("URL Entered", url);
 
         startActivity(intent);
