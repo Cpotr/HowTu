@@ -31,13 +31,24 @@
             android:id="@+id/linearLayout">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button2"
                 android:layout_width="fill_parent"
                 android:textAllCaps="false"
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="How to Knit"
+                android:onClick="button2"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:textAllCaps="false"
+                android:background="@drawable/style_button1"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="How to Crochet"
+                android:onClick="button3"/>
 
             <Button
                 android:id="@+id/button4"
@@ -46,7 +57,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Knit a Scarf"
+                android:onClick="button4"/>
 
             <Button
                 android:id="@+id/button5"
@@ -55,7 +67,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Knit a Headband"
+                android:onClick="button5"/>
 
             <Button
                 android:id="@+id/button6"
@@ -64,7 +77,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Crochet a Striped Afgan"
+                android:onClick="button6"/>
 
             <Button
                 android:id="@+id/button7"
@@ -73,7 +87,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Make a Fleece Tie Blanket"
+                android:onClick="button7"/>
 
             <Button
                 android:id="@+id/button8"
@@ -82,7 +97,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Make Your Own Boot Cuffs"
+                android:onClick="button8"/>
 
             <Button
                 android:id="@+id/button9"
@@ -91,7 +107,8 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Make Slime"
+                android:onClick="button9"/>
 
             <Button
                 android:id="@+id/button10"
@@ -100,25 +117,9 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Make Sand Art"
+                android:onClick="button10"/>
 
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="fill_parent"
-                android:textAllCaps="false"
-                android:background="@drawable/style_button1"
-                android:textColor="#ffffff"
-                android:layout_height="wrap_content"
-                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 

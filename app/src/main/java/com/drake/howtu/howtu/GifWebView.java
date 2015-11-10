@@ -8,18 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
 
-
+//custom webview class for displaying the gif
 public class GifWebView extends WebView {
 
     public GifWebView(Context context, String path){
         super(context);
         loadUrl(path);
     }
-/*
-    public GifWebView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemServiceService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.GifWebView, this);
-    }
-    */
 }
