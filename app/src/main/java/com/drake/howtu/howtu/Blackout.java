@@ -36,6 +36,8 @@ public class Blackout extends AppCompatActivity {
         params.screenBrightness = 0;
         getWindow().setAttributes(params);
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         //begins listening for audio
         //this will detect the sound from the user
         try {
@@ -52,6 +54,9 @@ public class Blackout extends AppCompatActivity {
     //on the device
     protected void onResume() {
         super.onResume();
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         audio = new AudioRecord(MediaRecorder.AudioSource.MIC, sampleRate,
                 AudioFormat.CHANNEL_IN_MONO,
                 AudioFormat.ENCODING_PCM_16BIT, bufferSize);

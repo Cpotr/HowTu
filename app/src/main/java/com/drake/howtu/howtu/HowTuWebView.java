@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -63,6 +64,8 @@ public class HowTuWebView extends AppCompatActivity {
 
         mWebView.loadUrl(urlEntered);
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         try {
             bufferSize = AudioRecord
                     .getMinBufferSize(sampleRate, AudioFormat.CHANNEL_IN_MONO,
@@ -78,6 +81,7 @@ public class HowTuWebView extends AppCompatActivity {
     //on the device
     protected void onResume() {
         super.onResume();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         audio = new AudioRecord(MediaRecorder.AudioSource.MIC, sampleRate,
                 AudioFormat.CHANNEL_IN_MONO,
                 AudioFormat.ENCODING_PCM_16BIT, bufferSize);
@@ -99,7 +103,7 @@ public class HowTuWebView extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-
+                            System.out.println(lastLevel);
                             //The if statement checks last level, sets the volume needed to call the method
                             if(lastLevel > 275 )
                             {
@@ -155,7 +159,7 @@ public class HowTuWebView extends AppCompatActivity {
     public void timerToBlackout() {
         inactivityTimer = new Timer();
         inactivityTask = new MyTimerTask();
-        inactivityTimer.schedule(inactivityTask, 10000);
+        inactivityTimer.schedule(inactivityTask, 90000);
     }
 
     @Override
@@ -178,16 +182,6 @@ public class HowTuWebView extends AppCompatActivity {
             }
         } catch (Exception e) {e.printStackTrace();}
     }
-
-    /*
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        inactivityTask.cancel();
-        timerToBlackout();
-    }
-    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
