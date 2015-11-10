@@ -32,7 +32,7 @@ public class HowTuWebView extends AppCompatActivity {
     private int bufferSize;
     private double lastLevel = 0;
     private Thread thread;
-    private static final int SAMPLE_DELAY = 75;
+    private static final int SAMPLE_DELAY = 25;
     private boolean bottom = true;
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
@@ -86,6 +86,9 @@ public class HowTuWebView extends AppCompatActivity {
                 while(thread != null && !thread.isInterrupted()){
                     //Let's make the thread sleep for a the approximate sampling time
                     try{Thread.sleep(SAMPLE_DELAY);}catch(InterruptedException ie){ie.printStackTrace();}
+
+                    lastLevel = 0;
+
                     readAudioBuffer();//After this call we can get the last value assigned to the lastLevel variable
 
                     runOnUiThread(new Runnable() {
@@ -94,7 +97,7 @@ public class HowTuWebView extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            if(lastLevel > 35)
+                            if(lastLevel > 250 )
                             {
                                 mWebView.pageDown(false);
                                 inactivityTask.cancel();

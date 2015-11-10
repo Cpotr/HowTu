@@ -1,13 +1,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_no_margin"
+    android:paddingRight="@dimen/activity_no_margin"
+    android:paddingTop="@dimen/activity_no_margin"
+    android:paddingBottom="10dp"
     android:clickable="true"
     android:focusableInTouchMode="true"
     android:background="@drawable/howtu_backgroundimage"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/howtu_header"
+        android:scaleType="fitXY"
+        android:id="@+id/headerBar"/>
 
     <ImageView
         android:layout_width="145dp"
@@ -23,6 +30,8 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:hint="  Paste url here"
+        android:textColorHint="#bab5b5"
+        android:textColor="#ff5722"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/enterButton"
         android:id="@+id/urlBar"
@@ -148,7 +157,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/food"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/headerBar"
         android:layout_alignLeft="@+id/handy"
         android:layout_alignStart="@+id/handy"
         android:layout_marginTop="40dp"
@@ -173,7 +182,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/drinks"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/headerBar"
         android:layout_alignLeft="@+id/car"
         android:layout_alignStart="@+id/car"
         android:layout_marginTop="40dp"

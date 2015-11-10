@@ -9,8 +9,8 @@ import android.view.MenuItem;
 
 public class FirstRunActivity extends AppCompatActivity {
 
-    SharedPreferences pref;
-    SharedPreferences.Editor editor;
+    //SharedPreferences pref;
+    //SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

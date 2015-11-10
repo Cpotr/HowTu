@@ -4,6 +4,7 @@
     android:paddingRight="0dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="0dp"
+    android:background="#ffffff"
     tools:context="com.drake.howtu.howtu.ScreenDIY">
 
     <ImageView
