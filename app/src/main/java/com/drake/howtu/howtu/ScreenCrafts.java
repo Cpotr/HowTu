@@ -15,6 +15,7 @@ public class ScreenCrafts extends AppCompatActivity {
         setContentView(R.layout.activity_screen_crafts);
     }
 
+    //Code to go to pre loaded tutorials
     public void button1 (View view){
         toWebView("http://www.craftyarncouncil.com/instructions_kn.php3");
     }
@@ -51,7 +52,7 @@ public class ScreenCrafts extends AppCompatActivity {
         toWebView("http://www.wikihow.com/Make-Sand-Art");
     }
 
-
+    //passes the URL into the webview and calls the webview
     public void toWebView(String URL)
     {
         Intent intent = new Intent(ScreenCrafts.this, HowTuWebView.class);

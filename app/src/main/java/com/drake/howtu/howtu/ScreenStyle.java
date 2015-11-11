@@ -15,6 +15,7 @@ public class ScreenStyle extends AppCompatActivity {
         setContentView(R.layout.activity_screen_style);
     }
 
+    //Code to go to pre loaded tutorials
     public void button1 (View view){
         toWebView("http://www.tie-a-tie.net/fourinhand.html");
     }
@@ -51,6 +52,7 @@ public class ScreenStyle extends AppCompatActivity {
         toWebView("http://www.cosmopolitan.com/style-beauty/beauty/how-to/a43730/face-shape-contour-map/");
     }
 
+    //passes the URL into the webview and calls the webview
     public void toWebView(String URL)
     {
         Intent intent = new Intent(ScreenStyle.this, HowTuWebView.class);

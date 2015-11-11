@@ -16,13 +16,16 @@ public class tutorial extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //create a webview with the html code that links to the tutorial gif and resizes to fit the screen
         GifWebView view = new GifWebView(this, "file:///android_asset/gif_formatter.html");
         setContentView(view);
-        View decorView = getWindow().getDecorView();
+
         // Hide the status bar.
+        View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
+
         //countdown for the gif to switch to the main page
         timer = new CountDownTimer(15000, 1000) {
             @Override
