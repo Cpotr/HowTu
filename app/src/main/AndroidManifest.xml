@@ -30,15 +30,6 @@
                 android:value="com.drake.howtu.howtu.HowTuWebView" />
         </activity>
         <activity
-            android:name=".SaveScreen"
-            android:label="@string/title_activity_save_screen"
-            android:parentActivityName=".HowTuWebView"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
-            <meta-data
-                android:name="android.support.Light.PARENT_ACTIVITY"
-                android:value="com.drake.howtu.howtu.HowTuWebView" />
-        </activity>
-        <activity
             android:name=".ScreenFood"
             android:label="@string/title_activity_screen_food"
             android:parentActivityName=".MainActivity"
