@@ -29,7 +29,7 @@
     <EditText
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:hint="  Paste url here"
+        android:hint="@string/PasteURL2"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/enterButton"
         android:id="@+id/urlBar"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/crafts"
-        android:text="Crafts"
+        android:text="@string/Crafts"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/crafts"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/style"
-        android:text="Style"
+        android:text="@string/Style"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/style"
@@ -114,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/handy"
-        android:text="DIY"
+        android:text="@string/DIY"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/handy"
@@ -139,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/car"
-        android:text="Auto"
+        android:text="@string/Auto"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/car"
@@ -164,7 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/food"
-        android:text="Food"
+        android:text="@string/Food"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/food"
@@ -189,7 +189,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/drinks"
-        android:text="Drinks"
+        android:text="@string/Drinks"
         android:textColor="#ff460c"
         android:textSize="35sp"
         android:layout_alignRight="@+id/drinks"
@@ -211,7 +211,8 @@
         android:layout_alignParentEnd="true"
         android:onClick="toTutorial"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
 
     <!--
     <Button

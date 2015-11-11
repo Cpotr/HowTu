@@ -29,7 +29,7 @@
     <EditText
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:hint="  Paste url here"
+        android:hint="@string/PasteUrl"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/enterButton"
         android:id="@+id/urlBar"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/crafts"
-        android:text="Crafts"
+        android:text="@string/Crafts"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/crafts"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/style"
-        android:text="Style"
+        android:text="@string/Style"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/style"
@@ -114,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/handy"
-        android:text="DIY"
+        android:text="@string/DIY"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/handy"
@@ -139,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/car"
-        android:text="Auto"
+        android:text="@string/Auto"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/car"
@@ -164,7 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/food"
-        android:text="Food"
+        android:text="@string/Food"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/food"
@@ -189,7 +189,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/drinks"
-        android:text="Drinks"
+        android:text="@string/Drinks"
         android:textColor="#ff460c"
         android:textSize="18sp"
         android:layout_alignRight="@+id/drinks"
@@ -211,27 +211,7 @@
         android:layout_alignParentEnd="true"
         android:onClick="toTutorial"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"/>
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"/>
 
-    <!--
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit URL"
-        android:textAllCaps="false"
-        android:onClick="toWebView"
-        android:id="@+id/button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To Black Out"
-        android:id="@+id/button2"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="toBlackout"/>
--->
 </RelativeLayout>

@@ -75,4 +75,12 @@
     <string name="SmokeyEye">Create a Smokey Eye</string>
     <string name="Bowtie">Tie a Bowtie</string>
     <string name="Contour">Contour Your Face</string>
+    <string name="PasteUrl">Paste url here</string>
+    <string name="Crafts">Crafts</string>
+    <string name="Style">Style</string>
+    <string name="DIY">DIY</string>
+    <string name="Auto">Auto</string>
+    <string name="Food">Food</string>
+    <string name="Drinks">Drinks</string>
+    <string name="PasteURL2">Paste url here</string>
 </resources>
