@@ -32,9 +32,12 @@ public class HowTuWebView extends AppCompatActivity {
     private AudioRecord audio;
     private int bufferSize;
     private double lastLevel = 0;
+    private double totalLevel = 0;
+    private int readingsNumber = 1;
+    private double avgLevel = 0;
+    private boolean resetting = false;
     private Thread thread;
     private static final int SAMPLE_DELAY = 25;
-    private boolean bottom = true;
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
@@ -103,9 +106,14 @@ public class HowTuWebView extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
-                            System.out.println(lastLevel);
+
+                            if (!resetting)
+                            {
+                                avgLevel = (totalLevel + lastLevel)/readingsNumber;
+                            }
+
                             //The if statement checks last level, sets the volume needed to call the method
-                            if(lastLevel > 275 )
+                            if(lastLevel > (avgLevel + 75) && readingsNumber < 500)
                             {
                                 //Scrolls the webview down
                                 mWebView.pageDown(false);
@@ -114,6 +122,21 @@ public class HowTuWebView extends AppCompatActivity {
 
                                 timerToBlackout();
                             }
+                            else if (readingsNumber > 499)
+                            {
+                                totalLevel = 0;
+                                readingsNumber = 1;
+                                resetting = true;
+                            }
+
+                            if (resetting && readingsNumber > 100)
+                            {
+                                resetting = false;
+                            }
+
+                            totalLevel = totalLevel + lastLevel;
+                            readingsNumber = readingsNumber + 1;
+
                         }
                     });
                 }

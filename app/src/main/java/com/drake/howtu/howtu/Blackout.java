@@ -19,6 +19,10 @@ public class Blackout extends AppCompatActivity {
     private AudioRecord audio;
     private int bufferSize;
     private double lastLevel = 0;
+    private double totalLevel = 0;
+    private int readingsNumber = 1;
+    private double avgLevel = 0;
+    private boolean resetting = false;
     private Thread thread;
     private static final int SAMPLE_DELAY = 25;
 
@@ -27,15 +31,17 @@ public class Blackout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blackout);
 
-        View decorView = getWindow().getDecorView();
         // Hide the status bar.
+        View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
+        //Sets screen brightness to lowest possible setting
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.screenBrightness = 0;
         getWindow().setAttributes(params);
 
+        //Ensures the device won't lock while the app is running
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //begins listening for audio
@@ -55,6 +61,7 @@ public class Blackout extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        //Ensures the device won't lock while the app is running
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         audio = new AudioRecord(MediaRecorder.AudioSource.MIC, sampleRate,
@@ -75,13 +82,31 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
+                            if (!resetting)
+                            {
+                                avgLevel = (totalLevel + lastLevel)/readingsNumber;
+                            }
 
                             //The if statement checks last level, sets the volume needed to call the method
-                            if(lastLevel > 275)
+                            if(lastLevel > (avgLevel + 75) && readingsNumber < 500)
                             {
                                 //closes this class and sends us back to the previous
                                 finish();
                             }
+                            else if (readingsNumber > 499)
+                            {
+                                totalLevel = 0;
+                                readingsNumber = 1;
+                                resetting = true;
+                            }
+
+                            if (resetting && readingsNumber > 100)
+                            {
+                                resetting = false;
+                            }
+
+                            totalLevel = totalLevel + lastLevel;
+                            readingsNumber = readingsNumber + 1;
                         }
                     });
                 }
@@ -129,13 +154,6 @@ public class Blackout extends AppCompatActivity {
             }
         } catch (Exception e) {e.printStackTrace();}
     }
-
-    public void toWebView(View view)
-    {
-        Intent intent = new Intent(this, HowTuWebView.class);
-        startActivity(intent);
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
