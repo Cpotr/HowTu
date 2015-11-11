@@ -46,18 +46,21 @@ public class HowTuWebView extends AppCompatActivity {
         setContentView(R.layout.activity_how_tu_web_view);
 
         Intent PassedValues = getIntent();
-        String urlEntered = "http://beta.html5test.com/";
+        String urlEntered = "Error";
 
+        //Sets the url passed into the activity by the user
         if(!Objects.equals(PassedValues.getStringExtra("URL Entered"), ""))
         {
             urlEntered = PassedValues.getStringExtra("URL Entered");
         }
 
+        //Checks to see if the passed url starts with the necessary "http://" and adds it if it doesn't
         if(urlEntered.charAt(0) != 'h' && urlEntered.charAt(1) != 't' && urlEntered.charAt(2) != 't' && urlEntered.charAt(3) != 'p')
         {
             urlEntered = "http://" + urlEntered;
         }
 
+        //Sets the WebView
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
         mWebView.setWebViewClient(new customWebViewClient());
 
@@ -65,8 +68,10 @@ public class HowTuWebView extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+        //Loads the url
         mWebView.loadUrl(urlEntered);
 
+        //Ensures the screen doesn't timeout during use
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         try {
@@ -77,6 +82,7 @@ public class HowTuWebView extends AppCompatActivity {
             android.util.Log.e("TrackingFlow", "Exception", e);
         }
 
+        //Starts the timer that launches the power saving activity if the user isn't interacting with the app
         timerToBlackout();
     }
 
@@ -107,33 +113,41 @@ public class HowTuWebView extends AppCompatActivity {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
 
+                            //Runs most of the time, calculating a running average based on the incoming readings
                             if (!resetting)
                             {
                                 avgLevel = (totalLevel + lastLevel)/readingsNumber;
                             }
 
                             //The if statement checks last level, sets the volume needed to call the method
+                            //Runs if volume level is 75 points above the average (which worked for all devices in most
+                            //situations other than very loud rooms or movement) and if fewer than 500 readings have been taken
                             if(lastLevel > (avgLevel + 75) && readingsNumber < 500)
                             {
                                 //Scrolls the webview down
                                 mWebView.pageDown(false);
 
+                                //Resets and restarts the timer
                                 inactivityTask.cancel();
-
                                 timerToBlackout();
                             }
+                            //Resets the total and the number of readings so slight changes in ambiance can still noticeably affect the
+                            //average over time
                             else if (readingsNumber > 499)
                             {
                                 totalLevel = 0;
                                 readingsNumber = 1;
+                                //Sets the resetting status to true, keeping the used average constant until the new average becomes stable
                                 resetting = true;
                             }
 
+                            //Ends the resetting status after 100 samples
                             if (resetting && readingsNumber > 100)
                             {
                                 resetting = false;
                             }
 
+                            //Adds to the total and iterates the average
                             totalLevel = totalLevel + lastLevel;
                             readingsNumber = readingsNumber + 1;
 
@@ -182,11 +196,13 @@ public class HowTuWebView extends AppCompatActivity {
     public void timerToBlackout() {
         inactivityTimer = new Timer();
         inactivityTask = new MyTimerTask();
+        //Starts a timer that blacks out the screen after 90 seconds unless the user interacts though either voice or touch
         inactivityTimer.schedule(inactivityTask, 90000);
     }
 
     @Override
     public void onUserInteraction() {
+        //Cancels and restarts the timer
         inactivityTask.cancel();
         timerToBlackout();
     }
@@ -194,7 +210,10 @@ public class HowTuWebView extends AppCompatActivity {
     @Override
     public void onPause() {
         super.onPause();
+
+        //Cancels the timer
         inactivityTask.cancel();
+
         thread.interrupt();
         thread = null;
         try {

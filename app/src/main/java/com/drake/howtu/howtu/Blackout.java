@@ -82,29 +82,38 @@ public class Blackout extends AppCompatActivity {
                         public void run() {
                             //Here is where we enter in the functionality for what
                             //we want the method to do
+
+                            //Runs most of the time, calculating a running average based on the incoming readings
                             if (!resetting)
                             {
                                 avgLevel = (totalLevel + lastLevel)/readingsNumber;
                             }
 
                             //The if statement checks last level, sets the volume needed to call the method
+                            //Runs if volume level is 75 points above the average (which worked for all devices in most
+                            //situations other than very loud rooms or movement) and if fewer than 500 readings have been taken
                             if(lastLevel > (avgLevel + 75) && readingsNumber < 500)
                             {
                                 //closes this class and sends us back to the previous
                                 finish();
                             }
+                            //Resets the total and the number of readings so slight changes in ambiance can still noticeably affect the
+                            //average over time
                             else if (readingsNumber > 499)
                             {
                                 totalLevel = 0;
                                 readingsNumber = 1;
+                                //Sets the resetting status to true, keeping the used average constant until the new average becomes stable
                                 resetting = true;
                             }
 
+                            //Ends the resetting status after 100 samples
                             if (resetting && readingsNumber > 100)
                             {
                                 resetting = false;
                             }
 
+                            //Adds to the total and iterates the average
                             totalLevel = totalLevel + lastLevel;
                             readingsNumber = readingsNumber + 1;
                         }

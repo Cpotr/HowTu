@@ -77,11 +77,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HowTuWebView.class);
         EditText urlEntry = (EditText)findViewById(R.id.urlBar);
 
+        //Doesn't let the user submit a blank url
         if (urlEntry.getText().length() == 0)
         {
             Toast toast = Toast.makeText(getApplicationContext(), "Please Enter a Valid URL", Toast.LENGTH_SHORT);
             toast.show();
         }
+        //Starts the webview with the entered url by passing user entry to the WebView activity
         else
         {
             intent.putExtra("URL Entered", urlEntry.getText().toString());
