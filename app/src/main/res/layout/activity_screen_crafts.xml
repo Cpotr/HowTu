@@ -37,9 +37,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button1"
                 android:text="@string/Knit"
                 android:textAllCaps="false"
-                android:onClick="button1"
                 android:textColor="#ffffff" />
 
             <Button
@@ -47,9 +47,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button2"
                 android:text="@string/Crochet"
                 android:textAllCaps="false"
-                android:onClick="button2"
                 android:textColor="#ffffff" />
 
             <Button
@@ -57,9 +57,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button3"
                 android:text="@string/Scarf"
                 android:textAllCaps="false"
-                android:onClick="button3"
                 android:textColor="#ffffff" />
 
             <Button
@@ -67,9 +67,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button4"
                 android:text="@string/Headband"
                 android:textAllCaps="false"
-                android:onClick="button4"
                 android:textColor="#ffffff" />
 
             <Button
@@ -77,9 +77,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button5"
                 android:text="@string/StripedHeadband"
                 android:textAllCaps="false"
-                android:onClick="button5"
                 android:textColor="#ffffff" />
 
             <Button
@@ -87,9 +87,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button6"
                 android:text="@string/FleeceBlanket"
                 android:textAllCaps="false"
-                android:onClick="button6"
                 android:textColor="#ffffff" />
 
             <Button
@@ -97,9 +97,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button7"
                 android:text="@string/BootCuffs"
                 android:textAllCaps="false"
-                android:onClick="button7"
                 android:textColor="#ffffff" />
 
             <Button
@@ -107,9 +107,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button8"
                 android:text="@string/Slime"
                 android:textAllCaps="false"
-                android:onClick="button8"
                 android:textColor="#ffffff" />
 
             <Button
@@ -117,9 +117,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_button1"
+                android:onClick="button9"
                 android:text="@string/Sand"
                 android:textAllCaps="false"
-                android:onClick="button9"
                 android:textColor="#ffffff" />
 
         </LinearLayout>

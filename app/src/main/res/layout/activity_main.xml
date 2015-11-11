@@ -1,92 +1,94 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_no_margin"
-    android:paddingRight="@dimen/activity_no_margin"
-    android:paddingTop="@dimen/activity_no_margin"
-    android:paddingBottom="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/howtu_backgroundimage2"
     android:clickable="true"
     android:focusableInTouchMode="true"
-    android:background="@drawable/howtu_backgroundimage2"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_no_margin"
+    android:paddingRight="@dimen/activity_no_margin"
+    android:paddingTop="@dimen/activity_no_margin"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/headerBar"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
-        android:src="@drawable/howtu_header"
         android:scaleType="fitXY"
-        android:id="@+id/headerBar"/>
+        android:src="@drawable/howtu_header" />
 
     <ImageView
+        android:id="@+id/enterButton"
         android:layout_width="100dp"
         android:layout_height="35dp"
-        android:src="@drawable/enterbutton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/enterButton"
+        android:layout_marginTop="5dp"
         android:onClick="toWebView"
-        android:layout_marginTop="5dp"/>
+        android:src="@drawable/enterbutton" />
 
     <EditText
+        android:id="@+id/urlBar"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:hint="@string/PasteUrl"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/enterButton"
-        android:id="@+id/urlBar"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:inputType="textUri|textNoSuggestions|textImeMultiLine"
+        android:background="@drawable/pasteurlbar"
+        android:hint="@string/PasteUrl"
         android:imeOptions="actionGo"
-        android:background="@drawable/pasteurlbar"/>
+        android:inputType="textUri|textNoSuggestions|textImeMultiLine" />
 
     <ImageView
+        android:id="@+id/crafts"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/handyLabel"
-        android:src="@drawable/crafts"
-        android:id="@+id/crafts"
         android:layout_alignLeft="@+id/urlBar"
         android:layout_alignStart="@+id/urlBar"
+        android:layout_below="@+id/handyLabel"
         android:layout_marginTop="10dp"
-        android:onClick="toCrafts"/>
+        android:onClick="toCrafts"
+        android:src="@drawable/crafts" />
 
     <TextView
+        android:id="@+id/craftLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/crafts"
-        android:text="@string/Crafts"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/crafts"
         android:layout_alignEnd="@+id/crafts"
         android:layout_alignLeft="@+id/crafts"
+        android:layout_alignRight="@+id/crafts"
         android:layout_alignStart="@+id/crafts"
-        android:id="@+id/craftLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/crafts"
+        android:gravity="center"
+        android:text="@string/Crafts"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <ImageView
+        android:id="@+id/style"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/carLabel"
-        android:src="@drawable/style"
-        android:id="@+id/style"
-        android:layout_alignRight="@+id/urlBar"
         android:layout_alignEnd="@+id/urlBar"
+        android:layout_alignRight="@+id/urlBar"
+        android:layout_below="@+id/carLabel"
         android:layout_marginTop="10dp"
-        android:onClick="toStyle"/>
+        android:onClick="toStyle"
+        android:src="@drawable/style" />
 
     <TextView
+        android:id="@+id/styleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/style"
-        android:text="@string/Style"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/style"
         android:layout_alignEnd="@+id/style"
         android:layout_alignLeft="@+id/style"
+        android:layout_alignRight="@+id/style"
         android:layout_alignStart="@+id/style"
-        android:id="@+id/styleLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/style"
+        android:gravity="center"
+        android:text="@string/Style"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <!--<ImageView
         android:layout_width="100dp"
@@ -100,118 +102,118 @@
         android:onClick="toHandy"/>-->
 
     <ImageView
+        android:id="@+id/handy"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/handy"
-        android:layout_below="@+id/foodLabel"
         android:layout_alignLeft="@+id/crafts"
         android:layout_alignStart="@+id/crafts"
-        android:id="@+id/handy"
+        android:layout_below="@+id/foodLabel"
         android:layout_marginTop="10dp"
-        android:onClick="toHandy"/>
+        android:onClick="toHandy"
+        android:src="@drawable/handy" />
 
     <TextView
+        android:id="@+id/handyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/handy"
-        android:text="@string/DIY"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/handy"
         android:layout_alignEnd="@+id/handy"
         android:layout_alignLeft="@+id/handy"
+        android:layout_alignRight="@+id/handy"
         android:layout_alignStart="@+id/handy"
-        android:id="@+id/handyLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/handy"
+        android:gravity="center"
+        android:text="@string/DIY"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <ImageView
+        android:id="@+id/car"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/car"
-        android:layout_below="@+id/drinksLabel"
         android:layout_alignLeft="@+id/style"
         android:layout_alignStart="@+id/style"
+        android:layout_below="@+id/drinksLabel"
         android:layout_marginTop="10dp"
-        android:id="@+id/car"
-        android:onClick="toCar"/>
+        android:onClick="toCar"
+        android:src="@drawable/car" />
 
     <TextView
+        android:id="@+id/carLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/car"
-        android:text="@string/Auto"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/car"
         android:layout_alignEnd="@+id/car"
         android:layout_alignLeft="@+id/car"
+        android:layout_alignRight="@+id/car"
         android:layout_alignStart="@+id/car"
-        android:id="@+id/carLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/car"
+        android:gravity="center"
+        android:text="@string/Auto"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <ImageView
+        android:id="@+id/food"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/food"
-        android:layout_below="@+id/headerBar"
         android:layout_alignLeft="@+id/handy"
         android:layout_alignStart="@+id/handy"
+        android:layout_below="@+id/headerBar"
         android:layout_marginTop="25dp"
-        android:id="@+id/food"
-        android:onClick="toFood"/>
+        android:onClick="toFood"
+        android:src="@drawable/food" />
 
     <TextView
+        android:id="@+id/foodLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/food"
-        android:text="@string/Food"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/food"
         android:layout_alignEnd="@+id/food"
         android:layout_alignLeft="@+id/food"
+        android:layout_alignRight="@+id/food"
         android:layout_alignStart="@+id/food"
-        android:id="@+id/foodLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/food"
+        android:gravity="center"
+        android:text="@string/Food"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <ImageView
+        android:id="@+id/drinks"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/drinks"
-        android:layout_below="@+id/headerBar"
         android:layout_alignLeft="@+id/car"
         android:layout_alignStart="@+id/car"
+        android:layout_below="@+id/headerBar"
         android:layout_marginTop="25dp"
-        android:id="@+id/drinks"
-        android:onClick="toDrinks"/>
+        android:onClick="toDrinks"
+        android:src="@drawable/drinks" />
 
     <TextView
+        android:id="@+id/drinksLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/drinks"
-        android:text="@string/Drinks"
-        android:textColor="#ff460c"
-        android:textSize="18sp"
-        android:layout_alignRight="@+id/drinks"
         android:layout_alignEnd="@+id/drinks"
         android:layout_alignLeft="@+id/drinks"
+        android:layout_alignRight="@+id/drinks"
         android:layout_alignStart="@+id/drinks"
-        android:id="@+id/drinksLabel"
-        android:gravity="center"/>
+        android:layout_below="@+id/drinks"
+        android:gravity="center"
+        android:text="@string/Drinks"
+        android:textColor="#ff460c"
+        android:textSize="18sp" />
 
     <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:id="@+id/imageButton"
-        android:src="@drawable/questionmark"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        android:layout_below="@+id/headerBar"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="toTutorial"
-        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headerBar"
+        android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginEnd="5dp"/>
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:onClick="toTutorial"
+        android:scaleType="fitXY"
+        android:src="@drawable/questionmark" />
 
 </RelativeLayout>
