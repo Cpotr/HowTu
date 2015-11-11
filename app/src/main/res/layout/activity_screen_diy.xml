@@ -37,7 +37,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Fix a Leaky Faucet"
+                android:text="@string/Faucet"
                 android:onClick="button1"/>
 
             <Button
@@ -47,7 +47,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Unclog a Shower Drain"
+                android:text="@string/Drain"
                 android:onClick="button2"/>
 
             <Button
@@ -57,7 +57,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Remove U Trap Under Sink"
+                android:text="@string/UTrap"
                 android:onClick="button3"/>
 
             <Button
@@ -67,7 +67,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Test Your Water Pressure"
+                android:text="@string/WaterPressure"
                 android:onClick="button4"/>
 
             <Button
@@ -77,7 +77,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Replace Damaged Shingles"
+                android:text="@string/Shingles"
                 android:onClick="button5"/>
 
             <Button
@@ -87,7 +87,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Caulk Windows"
+                android:text="@string/Caulk"
                 android:onClick="button6"/>
 
             <Button
@@ -97,7 +97,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Paint a Room"
+                android:text="@string/Paint"
                 android:onClick="button7"/>
 
             <Button
@@ -107,7 +107,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Drain a Water Heater"
+                android:text="@string/DrainWaterHeater"
                 android:onClick="button8"/>
 
             <Button
@@ -117,7 +117,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Replace a Door Knob"
+                android:text="@string/Knob"
                 android:onClick="button9"/>
 
         </LinearLayout>

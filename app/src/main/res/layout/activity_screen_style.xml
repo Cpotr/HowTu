@@ -37,7 +37,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button1"
-                android:text="Tie a Tie: Four in Hand Knot" />
+                android:text="@string/Tie1" />
 
             <Button
                 android:id="@+id/button2"
@@ -47,7 +47,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button2"
-                android:text="Tie a Tie: Pratt Knot" />
+                android:text="@string/Tie2" />
 
             <Button
                 android:id="@+id/button3"
@@ -57,7 +57,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button3"
-                android:text=" Tie a Tie: Half Windsor Knot" />
+                android:text="@string/Tie3" />
 
             <Button
                 android:id="@+id/button4"
@@ -67,7 +67,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button4"
-                android:text="Tie a Tie: WIndsor Knot" />
+                android:text="@string/Tie4" />
 
             <Button
                 android:id="@+id/button5"
@@ -77,7 +77,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button5"
-                android:text="French Braid Hair" />
+                android:text="@string/FrenchBraid" />
 
             <Button
                 android:id="@+id/button6"
@@ -87,7 +87,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button6"
-                android:text="Fishtail Braid Hair" />
+                android:text="@string/Fishtail" />
 
             <Button
                 android:id="@+id/button7"
@@ -97,7 +97,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button7"
-                android:text="Create a Smokey Eye" />
+                android:text="@string/SmokeyEye" />
 
             <Button
                 android:id="@+id/button8"
@@ -107,7 +107,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button8"
-                android:text="Tie a Bowtie" />
+                android:text="@string/Bowtie" />
 
             <Button
                 android:id="@+id/button9"
@@ -117,7 +117,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button9"
-                android:text="Contour Your Face" />
+                android:text="@string/Contour" />
 
         </LinearLayout>
     </ScrollView>

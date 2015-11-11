@@ -36,7 +36,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Cook Chili"
+                android:text="@string/Chili"
                 android:onClick="button1" />
 
             <Button
@@ -46,7 +46,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Cook Pancakes"
+                android:text="@string/Pancakes"
                 android:onClick="button2"/>
 
             <Button
@@ -56,7 +56,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Bake Chocolate Chip Cookies"
+                android:text="@string/Cookies"
                 android:onClick="button3"/>
 
             <Button
@@ -66,7 +66,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Cook Spaghetti and Meatballs"
+                android:text="@string/Spaghetti"
                 android:onClick="button4"/>
 
             <Button
@@ -76,7 +76,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Cook Grilled Cheese"
+                android:text="@string/GrilledCheese"
                 android:onClick="button5"/>
 
             <Button
@@ -86,7 +86,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make Guacamole"
+                android:text="@string/Guac"
                 android:onClick="button6"/>
 
             <Button
@@ -96,7 +96,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Cook French Toast"
+                android:text="@string/FrenchToast"
                 android:onClick="button7"/>
 
             <Button
@@ -106,7 +106,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Bake Brownies"
+                android:text="@string/Brownies"
                 android:onClick="button8"/>
 
             <Button
@@ -116,7 +116,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make Mashed Potatoes"
+                android:text="@string/MashedPotatoes"
                 android:onClick="button9"/>
 
 

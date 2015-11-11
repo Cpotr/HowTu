@@ -36,7 +36,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Gin Martini"
+                android:text="@string/Martini"
                 android:onClick="button1"/>
 
             <Button
@@ -46,7 +46,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make An Old Fashioned"
+                android:text="@string/OldFashioned"
                 android:onClick="button2"/>
 
             <Button
@@ -56,7 +56,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Manhattan"
+                android:text="@string/Manhattan"
                 android:onClick="button3"/>
 
             <Button
@@ -66,7 +66,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make a Daquiri"
+                android:text="@string/Daquiri"
                 android:onClick="button4"/>
 
             <Button
@@ -76,7 +76,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Margarita"
+                android:text="@string/Margaritta"
                 android:onClick="button5"/>
 
             <Button
@@ -86,7 +86,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Bloody mary"
+                android:text="@string/BloodyMary"
                 android:onClick="button6"/>
 
             <Button
@@ -96,7 +96,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Whiskey Sour"
+                android:text="@string/WhiskeySour"
                 android:onClick="button7"/>
 
             <Button
@@ -106,7 +106,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Cosmo"
+                android:text="@string/Cosmo"
                 android:onClick="button8"/>
 
             <Button
@@ -116,7 +116,7 @@
                 android:background="@drawable/style_button1"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
-                android:text="Make A Mojito"
+                android:text="@string/Mojito"
                 android:onClick="button9"/>
 
         </LinearLayout>

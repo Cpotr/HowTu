@@ -37,7 +37,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button1"
-                android:text="Change a Tire" />
+                android:text="@string/ChangeTire" />
 
             <Button
                 android:id="@+id/button2"
@@ -47,7 +47,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button2"
-                android:text="Change Wiper Blade" />
+                android:text="@string/ChangeWiper" />
 
             <Button
                 android:id="@+id/button3"
@@ -57,7 +57,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button3"
-                android:text="Change a Fuse" />
+                android:text="@string/ChangeFuse" />
 
             <Button
                 android:id="@+id/button4"
@@ -67,7 +67,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button4"
-                android:text="Replace Spark Plug" />
+                android:text="@string/ChangeSpark" />
 
             <Button
                 android:id="@+id/button5"
@@ -77,7 +77,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button5"
-                android:text="Check Your Fluids" />
+                android:text="@string/CheckFluids" />
 
             <Button
                 android:id="@+id/button6"
@@ -87,7 +87,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button6"
-                android:text="Change Your Headlights" />
+                android:text="@string/ChangeHeadlights" />
 
             <Button
                 android:id="@+id/button7"
@@ -97,7 +97,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button7"
-                android:text="Change Your Air Filter" />
+                android:text="@string/ChangeFluid" />
 
             <Button
                 android:id="@+id/button8"
@@ -107,7 +107,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button8"
-                android:text="Flush a Radiator" />
+                android:text="@string/FlushRadiator" />
 
             <Button
                 android:id="@+id/button9"
@@ -117,7 +117,7 @@
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
                 android:onClick="button9"
-                android:text="Change Your Brake Pads" />
+                android:text="@string/ChangeBrakePad" />
 
         </LinearLayout>
     </ScrollView>
